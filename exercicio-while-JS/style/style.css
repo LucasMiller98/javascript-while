@@ -1,0 +1,114 @@
+* {margin: 0; padding: 0;}
+::selection {
+    color: #ffffff;
+    background-color: #807878;
+}
+/* 
+    Títulos
+*/
+h1, h3 {
+    font-family: 'Courgette', Helvetica, serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-weight: 100;
+    margin: 25px 0;
+}
+h3 {
+    border-bottom: 2px solid #ffffff;
+}
+
+/* 
+    Conteúdo principal
+*/
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Seções */
+#table-section, #section-calcular {
+    background-color: #a7a7a7;
+    padding: 80px;
+    box-shadow: 12px 8px 3px #606060;
+    border-radius: 2rem 1rem;
+    margin: 15px 0;
+}
+#table-section h3, #section-calcular h3  {
+    color: #ffffff;
+    font-size: 1.5vw;
+    position: relative;
+    bottom: 40px;
+}
+/* input */
+#choose-table, #input-calcular {
+    background-color: #a7a7a7;
+    outline: none;
+    color: #ffffff;
+    border: none;
+    border-bottom: 2px solid #494746;
+    padding: 10px 5px;
+    margin-bottom: 55px;
+    font-weight: 700;
+}
+/* Tira a setinha do input */
+#choose-table::-webkit-inner-spin-button, #input-calcular::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+#button-tabuada, #button-calcular {
+    font-family: 'Courgette', Helvetica, serif;
+    padding: 7px;
+    border-radius: 2rem 1rem 2rem;
+    border: 1px solid rgb(161, 85, 31);
+    color: #414040;
+    background-color: #ffffff;
+    outline: none;
+    margin: 15px;
+}
+#escolha-tabuada {
+    outline: none;
+    border-radius: 2rem 1rem;
+    border: 1px solid rgb(161, 85, 31);
+    color: #414040;
+    padding: 7px;
+    position: relative;
+    bottom: 190px;
+    background-color: #ffffff;
+    font-family: 'Courgette', Helvetica, serif;
+}
+#button-tabuada:hover, #button-iniciar:hover, #button-calcular:hover {
+    color: #ffffff;
+    background-color: rgb(161, 85, 31);
+    transition: background .4s;
+}
+/* select */
+#show-table-screen, #select-res-tabuada {
+    padding: 15px 60px;
+    margin-bottom: 15px;
+    border: none;
+    outline: none;
+}
+#select-res-tabuada {
+    position: relative;
+    left: 30px;
+}
+
+/* 
+    Rodapé
+*/
+footer {
+    color: #ffffff;
+    background-color: #383636;
+    font-family: 'Courgette', Helvetica, serif;
+    font-size: 1.1vw;
+    padding: 186px 0;
+    margin-top: 15px;
+}
+#criador, #direitos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+footer section p::after {
+    content: ".";
+}

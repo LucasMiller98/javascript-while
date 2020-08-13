@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
+    <script src="js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b55b406ab0.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="img/icon-js.png">
+    <link rel="stylesheet" href="style/style.css">
+    <title>JavaScript - While</title>
+</head>
+<body>
+    <header>
+        <h1>JavaScript - While</h1>
+    </header>
+    <main>
+        <section id="table-section" onmouseover="iniciaEntradaTabuada()" onmouseout="iniciaSaidaTabuada()">
+            <h3>Tabuada</h3>
+            <p>
+                <input type="number" id="choose-table" autocomplete="off" placeholder="Informe um número">
+            </p>
+            <section id="indentificador-tabuada">
+                <!-- Mostrará o número da tabuada escolhida -->
+            </section>
+            <select id="show-table-screen" size="10">
+                <!-- A tabuada irá aparecer aqui -->
+            </select>
+            <button id="button-tabuada" onclick="startTable()">
+                Ver tabuada
+            </button>
+            <section id="error">
+                <!-- Os erros irão ser mostrados aqui -->
+            </section>
+        </section>
+        <section id="section-calcular" onmouseover="iniciaEntradaCalcular()" onmouseout="iniciaSaidaCalcular()">
+            <h3>Escolha uma tabuada</h3>
+            <p>
+                <input type="number" id="input-calcular" placeholder="Digite um número">
+            </p>
+            <select id="escolha-tabuada" id="escolha-tabuada2">
+                <option value="">--Selecione uma tabuada--</option>
+                <option value="1">Multiplicação</option>
+                <option value="2">Divisão</option>
+                <option value="3">Soma</option>
+                <option value="4">Subtração</option>
+            </select>
+            <select id="select-res-tabuada" size="10">
+                <!-- resultado -->
+            </select>
+            <p>
+                <button id="button-calcular" onclick="iniciaCalculo()">
+                    Calcular
+                </button>
+            </p>
+            <section id="section-error">
+                <!-- A mensagem de erro irá aparecer aqui. -->
+            </section>
+        </section>
+    </main>
+    <footer>
+        <section id="criador">
+            <p>
+                &copy; By Lucas Miller
+            </p>
+        </section>
+        <section id="direitos">
+            <p>
+                &copy; Todos os direitos reservados a Start Latam e a Accenture
+            </p>
+        </section>
+    </footer>
+</body>
